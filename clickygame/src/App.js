@@ -12,7 +12,7 @@ class App extends Component {
     cards,
     score: 0,
     topScore: 0,
-    message: "Click on any emoji to start playing 😉"
+    message: "Click on any image to start playing 😉"
     };
   
   gameOver = () =>{
@@ -28,13 +28,16 @@ class App extends Component {
     return true;
   }
   clickCount = id => {
-    this.state.cards.find((o, i) => {
-      if (o.id === id) {
+    //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+    this.state.cards.find((ele, i) => {
+      if (ele.id === id) {
         if(cards[i].count === 0){
           cards[i].count = cards[i].count + 1;
           this.setState({score : this.state.score + 1}, function(){
             console.log(this.state.score);
           });
+          //https://www.freecodecamp.org/forum/t/how-does-math-random-work-to-sort-an-array/151540/8
+          //http://www.javascriptkit.com/javatutors/arraysort.shtml
           this.state.cards.sort(() => Math.random() - 0.5)
           return true; 
         } else {  
