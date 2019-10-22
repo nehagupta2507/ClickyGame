@@ -1,0 +1,33 @@
+h1 {
+  line-height:40px;
+  font-weight: 200;
+  font-style: italic;
+  color: red;
+  padding: 10px;
+  border-radius: 1rem;
+  width:350px;
+  margin: 10px auto;   
+}
+
+
+#message {
+  font-size: 16px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.score { 
+  margin: 0 10px 10px;
+  border: 1.5px solid #c8caef;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+@media screen and (min-width: 520px) {
+  #msg {
+    font-size: 20px;
+  }
+  .modal-content {
+    font-size: 20px;
+  }
+}
