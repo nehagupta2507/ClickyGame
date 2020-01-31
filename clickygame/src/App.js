@@ -10,7 +10,8 @@ class App extends Component {
     cards,
     score: 0,
     topScore: 0,
-    message: "Click on any image to start playing 😉"
+    message: "Click on any image to start playing 😉",
+    resetMsg: false,
     };
   
   gameOver = () =>{
@@ -22,9 +23,10 @@ class App extends Component {
     this.state.cards.forEach(card => {
       card.count = 0;
     });
-    this.setState({score: 0, message: "Nay! You clicked an image more than once 😐! Click on any image to try one more time"});
+    this.setState({score: 0, message: "Click on any image to start playing!"});
     return true;
   }
+  
   clickCount = id => {
     //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
     this.state.cards.find((ele, i) => {
