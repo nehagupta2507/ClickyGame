@@ -17,13 +17,13 @@ The user's score is reset to 0 if they click the same image more than once and t
     npm start
 
 ## Built With
-  -This project was bootstrapped with "Create React App"
-  -React
-  -Bootstrap
-  -CSS
-  -ES6
-  -JavaScript
-  -JSX
+  - This project was bootstrapped with "Create React App"
+  - React
+  - Bootstrap
+  - CSS
+  - ES6
+  - JavaScript
+  - JSX
 
 ## Mobile UX
 <p align="center">
