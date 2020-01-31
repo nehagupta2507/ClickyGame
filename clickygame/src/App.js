@@ -11,7 +11,6 @@ class App extends Component {
     score: 0,
     topScore: 0,
     message: "Click on any image to start playing 😉",
-    resetMsg: false,
     };
   
   gameOver = () =>{
@@ -26,7 +25,7 @@ class App extends Component {
     this.setState({score: 0, message: "Click on any image to start playing!"});
     return true;
   }
-  
+
   clickCount = id => {
     //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
     this.state.cards.find((ele, i) => {
@@ -40,8 +39,9 @@ class App extends Component {
           //http://www.javascriptkit.com/javatutors/arraysort.shtml
           this.state.cards.sort(() => Math.random() - 0.5)
           return true; 
-        } else {  
-          this.gameOver();
+        } else { 
+          this.setState({score: this.state.score, message: "Nay! You lost!"});
+          setTimeout(() => {this.gameOver()}, 1000);
         }
       }
     });
