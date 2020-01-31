@@ -23,11 +23,32 @@ h1 {
   padding: 6px 12px;
 }
 
-@media screen and (min-width: 520px) {
-  #msg {
+@media screen and (min-width: 521px) {
+  #message {
     font-size: 20px;
   }
-  .modal-content {
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    line-height:40px;
+    font-weight: 100;
     font-size: 20px;
   }
+
+  h3 {
+    font-size: 1em;
+    margin-left: 10px;
+  }
+
+  #message {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  .card {
+    height: 250px;
+    width: 250px;
+  }
+
 }
