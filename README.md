@@ -27,12 +27,12 @@ The user's score is reset to 0 if they click the same image more than once and t
 
 ## Mobile UX
 <p align="center">
-    <img src="/public/images/m1.png" alt="Mobile Version" width="350px">
+    <img src="/clickygame/public/images/m1.png" alt="Mobile Version" width="350px">
 </p>
 
 ## Desktop UI
 <p align="center">
-    <img src="/public/images/d1.png" alt="Desktop Version" width="350px">
+    <img src="/clickygame/public/images/d1.png" alt="Desktop Version" width="350px">
 </p>
 
 ## Authors
