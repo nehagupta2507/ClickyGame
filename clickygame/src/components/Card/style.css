@@ -7,11 +7,11 @@
   margin-bottom: 30px;
   position: relative;
   width: 425px;
-  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  box-shadow: 0 3px 6px rgb(231, 84, 84), 0 3px 6px rgb(216, 18, 18);
   float: left;
   animation: shake 0.5s; 
-
 }
+
 #icon{
   max-width: 45px;
   max-height: 45px;
@@ -22,8 +22,8 @@
   height: 100%;
   overflow: hidden;
   text-align: center;
-  background: wheat
-
+  background: wheat;
+  text-align: center;
 }
 
 .card > .img-container > img {
