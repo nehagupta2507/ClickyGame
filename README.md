@@ -25,17 +25,17 @@ The user's score is reset to 0 if they click the same image more than once and t
   - JavaScript
   - JSX
 
-## Mobile UX
+## Mobile
 <p align="center">
     <img src="/clickygame/public/images/m2.png" alt="Mobile Version" width="350px">
 </p>
 
-## Desktop UI
+## Desktop
 <p align="center">
     <img src="/clickygame/public/images/d2.png" alt="Desktop Version" width="350px">
 </p>
 
-## Authors
+## Author
 Neha Gupta 
 
 ## License
